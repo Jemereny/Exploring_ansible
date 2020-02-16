@@ -1,0 +1,21 @@
+version: '3'
+services:
+  master:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+  appserver:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+  webserver:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  
+  dbserver:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
